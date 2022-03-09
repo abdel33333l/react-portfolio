@@ -1,0 +1,33 @@
+.navBar {
+  width: max-content;
+  color: var(--color-white);
+  display: flex;
+  gap: 1.2rem;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+
+.navBar a {
+  background: transparent;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
+}
+
+.navBar a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navBar a.active {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
